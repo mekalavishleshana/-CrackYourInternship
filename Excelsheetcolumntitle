@@ -1,0 +1,14 @@
+class Solution {
+    public String convertToTitle(int columnNumber) {
+      String s="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      String s1="";
+        int qoutient =0;
+      while(columnNumber > 0){
+          int p=columnNumber;
+          columnNumber = (columnNumber-1)/26;
+          qoutient = (p-1)%26;
+          s1=s.charAt(qoutient)+s1;
+      }
+    return s1;
+    }
+}
